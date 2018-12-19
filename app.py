@@ -6,6 +6,7 @@ from PIL import Image
 import pytesseract
 import argparse
 import cv2
+from raygun4py.middleware import flask
 
 __author__ = 'Rick Torzynski <ricktorzynski@gmail.com>'
 __source__ = ''
@@ -13,6 +14,7 @@ __source__ = ''
 app = Flask(__name__)
 UPLOAD_FOLDER = './static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER 
+app.Provider(app, '9xFpI8E9NfSpMm0T9J0A').attach()
 
 @app.route("/")
 def index():
