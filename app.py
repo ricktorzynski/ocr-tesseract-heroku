@@ -14,7 +14,7 @@ __source__ = ''
 
 app = Flask(__name__)
 
-MYDIR = os.path.dirname(__file__)tesseract-ocr
+MYDIR = os.path.dirname(__file__)
 UPLOAD_FOLDER = 'static/uploads'
 app.config['UPLOAD_FOLDER'] = os.path.join(MYDIR + "/" + UPLOAD_FOLDER)
 
