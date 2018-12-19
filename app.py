@@ -14,7 +14,7 @@ __source__ = ''
 app = Flask(__name__)
 UPLOAD_FOLDER = './static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER 
-app.Provider(app, '9xFpI8E9NfSpMm0T9J0A').attach()
+flask.Provider(app, '9xFpI8E9NfSpMm0T9J0A').attach()
 
 @app.route("/")
 def index():
