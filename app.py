@@ -14,7 +14,7 @@ __source__ = ''
 app = Flask(__name__)
 
 MYDIR = os.path.dirname(__file__)
-UPLOAD_FOLDER = '/tmp'
+UPLOAD_FOLDER = 'tmp'
 app.config['UPLOAD_FOLDER'] = os.path.join(MYDIR + "/" + UPLOAD_FOLDER)
 
 flask.Provider(app, '9xFpI8E9NfSpMm0T9J0A').attach()
