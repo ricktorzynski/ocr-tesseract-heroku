@@ -12,7 +12,7 @@ __author__ = 'Rick Torzynski <ricktorzynski@gmail.com>'
 __source__ = ''
 
 app = Flask(__name__)
-UPLOAD_FOLDER = './static/uploads'
+UPLOAD_FOLDER = '/app/static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER 
 flask.Provider(app, '9xFpI8E9NfSpMm0T9J0A').attach()
 
