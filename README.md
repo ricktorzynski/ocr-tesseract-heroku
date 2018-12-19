@@ -1,1 +1,1 @@
-# ocr-tesseract-docker
+# ocr-tesseract-heroku
