@@ -12,8 +12,11 @@ __author__ = 'Rick Torzynski <ricktorzynski@gmail.com>'
 __source__ = ''
 
 app = Flask(__name__)
-UPLOAD_FOLDER = '/app/static/uploads'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER 
+
+MYDIR = os.path.dirname(__file__)
+UPLOAD_FOLDER = 'static/uploads'
+app.config['UPLOAD_FOLDER'] = os.path.join(MYDIR + "/" + UPLOAD_FOLDER)
+
 flask.Provider(app, '9xFpI8E9NfSpMm0T9J0A').attach()
 
 @app.route("/")
