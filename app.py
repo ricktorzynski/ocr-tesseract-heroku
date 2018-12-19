@@ -11,9 +11,10 @@ from raygun4py.middleware import flask
 __author__ = 'Rick Torzynski <ricktorzynski@gmail.com>'
 __source__ = ''
 
+
 app = Flask(__name__)
 
-MYDIR = os.path.dirname(__file__)
+MYDIR = os.path.dirname(__file__)tesseract-ocr
 UPLOAD_FOLDER = 'static/uploads'
 app.config['UPLOAD_FOLDER'] = os.path.join(MYDIR + "/" + UPLOAD_FOLDER)
 
