@@ -16,4 +16,4 @@ pytesseract==0.2.6
 raygun4py==4.2.1
 requests==2.21.0
 urllib3==1.24.1
-Werkzeug==0.14.1
+Werkzeug==0.15.3
